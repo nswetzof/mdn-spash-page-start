@@ -127,7 +127,7 @@
           <img srcset="mozilladinosaurhead400.png 400w,
                       mozilladinosaurhead120.png 120w"
                 sizes="(max-width: 500px) 120px,
-                      400px",
+                      400px"
                 src="mozilladinosaurhead400" alt="A red, smiling dinosaur head.">
         </a>
         <a href="https://www.mozilla.org/">
@@ -151,7 +151,11 @@
       </div>
 
       <div class="red-panda">
-        <!-- insert picture element -->
+        <picture>
+          <source type="image/jpg" media="(min-width: 601px)" srcset="redpanda1200_landscape.jpg">
+          <source type="image/jpg" media="(max-width: 600px)" srcset="redpanda600_portrait.jpg">
+          <img src="redpanda1200_landscape.jpg" alt="A panda in a tree.">
+        </picture>
       </div>
 
     </main>
